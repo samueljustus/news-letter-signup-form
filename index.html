@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <link rel="stylesheet" href="styles.css">
     <title>News letter signup</title>
 </head>
@@ -41,11 +42,11 @@
                     <p>And much more!</p>
                 </div>  
               </div>
-              <form id="form">
+              <form id="form" action="thankyou.html">
                 <small class="small">error message</small>
                     <label for="email" class="label">Email address</label>
                 <input type="email" class="email" id="email" placeholder="email@company.com">
-                 <a href="thankyou.html" class="btn">Subscribe to monthly newsletter</a>
+                 <button type="submit" class="btn">Subscribe to monthly newsletter</button>
               </form>
         </div>
     </div>

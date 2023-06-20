@@ -1,11 +1,9 @@
 const form = document.querySelector('#form')
 const email = document.querySelector('.email')
 const small = document.querySelector('.small')
-const button = document.querySelector('.btn')
 
-button.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
    e.preventDefault();
-
    checkEmail();
 })
 
@@ -16,13 +14,18 @@ function checkEmail() {
 
     if (emailValue === "") {
          errorMsg(email, 'Valid email required');
+        return false;
     } 
     else if (!emailValue.match(validEmailPattern)) {
         errorMsg(email, 'Valid email required');
-    } else {
-        successMsg(email);
+        return false;
 
-    }   
+    } else {
+        successMsg(email);  
+        
+    }
+    return true;
+
 }
 
 
