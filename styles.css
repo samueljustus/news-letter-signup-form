@@ -18,7 +18,7 @@ img {
 } 
 
 .news-letter {
-    width: 90%;
+    width: 100%;
     padding: 1.2em;
 }
 
@@ -50,16 +50,10 @@ img {
     width: 100%;
 }
 
-#form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.8em;
-    position: absolute;
-}
 
 small {
     position: absolute;
-    right: 0.5em;
+    right: 2em;
     display: none;
 }
 
@@ -106,5 +100,40 @@ small {
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 400;
+    width: 100%;
     border: none;
+}
+
+@media (min-width: 600px) {
+    body {
+     background: hsl(234, 29%, 20%);
+     min-height: 100vh;
+    }
+    .img__mobile {
+        display:none;
+    }
+    .img__desktop {
+        display: block;
+    }
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        border: 1px solid green;
+        margin: 3em;
+        background: #ffff;
+        position: absolute;
+    }
+    .news-letter {
+        max-width: 600px;
+        position: relative;
+    }
+    small {
+        position: absolute;
+        right: 2em;
+        display: none;
+    }
+    
 }
