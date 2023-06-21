@@ -17,6 +17,7 @@ img {
     width: 100%;
     margin-top: 6em;
     padding: 1em;
+    max-width: 500px;
 }
 
 .title {
@@ -25,6 +26,16 @@ img {
     font-weight: 900;
     font-size: 2.5em;
 }
+
+.thankyou-msg {
+    margin-top: 2em;
+    line-height: 1.2;
+    color: hsl(234, 29%, 20%);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
 
 .btn {
     display: inline-block;
@@ -38,4 +49,25 @@ img {
     font-weight: 400;
     width: 100%;
     text-align: center;
+}
+
+@media (min-width: 420px) {
+    body {
+        background:hsl(234, 29%, 20%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        background:hsl(0, 0%, 100%);
+        max-width: 400px;
+        padding: 2em 2.5em 2em 2.5em;
+        border-radius: 20px;
+    }
+    .container > * {
+        margin: .5em 0 .5em;
+    }
+    .btn:hover {
+        background: hsl(4, 100%, 67%);
+    }
 }

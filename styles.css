@@ -19,6 +19,7 @@ img {
 
 .news-letter {
     width: 100%;
+    max-width: 600px;
     padding: 1.2em;
 }
 
@@ -81,6 +82,10 @@ small {
     border-radius: 5px;
     border: 1px solid hsl(231, 7%, 60%);
 }
+input:focus { 
+    outline: none;
+    border-color:hsl(234, 29%, 20%);
+}
 
 .error .email {
     border: 1px solid hsl(4, 100%, 67%);
@@ -103,11 +108,18 @@ small {
     width: 100%;
     border: none;
 }
+.btn:hover {
+    opacity: 0.9
+}
 
-@media (min-width: 600px) {
+@media (min-width: 670px) {
     body {
      background: hsl(234, 29%, 20%);
-     min-height: 100vh;
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
     }
     .img__mobile {
         display:none;
@@ -121,13 +133,14 @@ small {
         justify-content: center;
         align-items: center;
         gap: 2em;
-        border: 1px solid green;
         margin: 3em;
         background: #ffff;
-        position: absolute;
+        border-radius: 20px;
+        padding: 1em;
+        
     }
     .news-letter {
-        max-width: 600px;
+        max-width: 400px;
         position: relative;
     }
     small {
@@ -135,5 +148,7 @@ small {
         right: 2em;
         display: none;
     }
-    
+    .btn:hover {
+        background: hsl(4, 100%, 67%);
+    }
 }
