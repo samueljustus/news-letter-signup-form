@@ -26,7 +26,7 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://samueljustus.github.io/news-letter-signup-form/)
 
 ## My process
 started with te html and css then i added the javascript for the index.html and thankyou.html files then i moved
