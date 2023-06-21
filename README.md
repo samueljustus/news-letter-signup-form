@@ -4,10 +4,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
-
-- [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,7 +12,6 @@ Frontend Mentor challenges help you improve your coding skills by building reali
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ### The challenge
 
@@ -33,4 +29,35 @@ Users should be able to:
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
-started with vdvv
+started with te html and css then i added the javascript for the index.html and thankyou.html files then i moved
+on to making it responsive with media queries
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+
+### What I learned
+
+i learnt how to submit forms with javscript and querystrings. this was the first time i use the GET method on my form
+so i learnt how to use this method to get the values in a form.
+
+```html
+<form method ="GET"></form>
+```
+```
+const param = new URLSearhParam(window.location.search)
+```
+### Continued development
+i'd continue learning about web apis till i get really comfortable with them
+
+### Useful resources
+https://www.youtube.com/watch?v=ap2ntgOb-Hg&list=WL&index=1&t=6s - thus helped me with learning how to submit js form
+
+## Author
+
+- Frontend Mentor - [samueljustus](https://www.frontendmentor.io/profile/samueljustus)
+- Twitter - [@yourusername](https://www.twitter.com/samueljustus_)
